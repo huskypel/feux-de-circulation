@@ -13,6 +13,6 @@ basic.forever(function () {
         pins.digitalWritePin(DigitalPin.P8, 1)
     }
     for (let index = 0; index < 4; index++) {
-    	
+        pins.digitalWritePin(DigitalPin.P16, 1)
     }
 })
