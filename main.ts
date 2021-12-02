@@ -1,4 +1,5 @@
 input.onButtonPressed(Button.A, function () {
+    lumiere = 3
     vert()
     basic.pause(2000)
     orange()
@@ -29,9 +30,10 @@ function vert () {
     pins.digitalWritePin(DigitalPin.P16, 1)
 }
 let lumiere_rouge = 0
+let lumiere = 0
 vert()
 basic.forever(function () {
-    if (lumiere_rouge < 1) {
+    if (lumiere_rouge == 2) {
         vert()
     }
 })
